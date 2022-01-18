@@ -1,1 +1,1 @@
-<img src="../src/assets/imagePreview.png" alt="preview">
+<img src=".src/assets/imagePreview.png" alt="preview">
