@@ -8,6 +8,12 @@ const GlobalStyle = createGlobalStyle`
         background-color: #181818;
         font-family: 'Be Vietnam Pro', sans-serif;
     }
+
+    :root {
+    --base-color: #4452fe
+    --light-color: #fff
+
+}
 `;
 
 export default GlobalStyle;

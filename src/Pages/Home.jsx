@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import backgroundImg from "../assets/screens.png";
-// import backgroundTest from "../assets/bgTest.png";
 import homeBackground from "../assets/homeBackground.png";
 import BlackButton from "../Components/BlackButton";
 import PurpleButton from "../Components/PurpleButton";
@@ -26,7 +25,6 @@ function Home() {
                         <BlackButton>Learn More</BlackButton>
                     </WrapperButton>
                 </WrapperDiv>
-                {/* <GradientDiv /> */}
             </HomeSection>
         </div>
     );
