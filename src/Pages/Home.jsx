@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import backgroundImg from "../assets/screens.png";
+import backgroundTest from "../assets/bgTest.png";
 
 function Home() {
     return (
@@ -26,8 +27,11 @@ function Home() {
 export default Home;
 
 export const HomeSection = styled.section`
-    background-image: url(${backgroundImg});
-    background-position-y: 50;
+    /* background-image: url(${backgroundImg}); */
+    background-image: url(${backgroundTest});
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: 6.063rem;
     height: 89vh;
 `;
 
