@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const BlackButton = styled.button`
-    width: 8.688rem;
-    height: 3.25rem;
+    width: 11.25rem;
+    height: 4.063rem;
     border: 1px solid white;
     color: white;
     background-color: #181818;

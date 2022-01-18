@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import backgroundImg from "../assets/screens.png";
 import backgroundTest from "../assets/bgTest.png";
+import BlackButton from "../Components/BlackButton";
+import PurpleButton from "../Components/PurpleButton";
 
 function Home() {
     return (
@@ -18,6 +20,10 @@ function Home() {
                             plan their schedule.
                         </Subtitle>
                     </WrapperSubtitle>
+                    <WrapperButton>
+                        <PurpleButton>Try For Free</PurpleButton>
+                        <BlackButton>Learn More</BlackButton>
+                    </WrapperButton>
                 </WrapperDiv>
             </HomeSection>
         </div>
@@ -31,7 +37,7 @@ export const HomeSection = styled.section`
     background-image: url(${backgroundTest});
     background-repeat: no-repeat;
     background-position-y: bottom;
-    background-position-x: 6.063rem;
+    background-position-x: 5.625rem;
     height: 89vh;
 `;
 
@@ -75,4 +81,13 @@ export const Subtitle = styled.h2`
     color: white;
     font-size: 1.25rem;
     font-weight: 200;
+`;
+
+export const WrapperButton = styled.div`
+    width: 25rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
 `;
