@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import backgroundImg from "../assets/screens.png";
 import homeBackground from "../assets/homeBackground.png";
 import BlackButton from "../Components/BlackButton";
 import PurpleButton from "../Components/PurpleButton";
@@ -33,7 +32,6 @@ function Home() {
 export default Home;
 
 export const HomeSection = styled.section`
-    /* background-image: url(${backgroundImg}); */
     background-image: url(${homeBackground});
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -78,6 +76,7 @@ export const WrapperSubtitle = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
 `;
 
 export const Title = styled.h1`
