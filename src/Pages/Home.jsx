@@ -3,21 +3,23 @@ import styled from "styled-components";
 import homeBackground from "../assets/homeBackground.png";
 import BlackButton from "../Components/BlackButton";
 import PurpleButton from "../Components/PurpleButton";
+import SectionText from "../Components/SectionText";
+import { WrapperSubtitle } from "../Components/WrapperSubtitle";
 
 function Home() {
     return (
         <div>
             <HomeSection>
                 <WrapperDiv>
-                    <WrapperTitle>
-                        <Title>Work at the speed of thought</Title>
-                    </WrapperTitle>
+                    <WrapperMainTitle>
+                        <MainTitle>Work at the speed of thought</MainTitle>
+                    </WrapperMainTitle>
                     <WrapperSubtitle>
-                        <Subtitle>
+                        <SectionText>
                             Most calendars are designed for teams. Slate is
                             designed for freelancers who want a simple way to
                             plan their schedule.
-                        </Subtitle>
+                        </SectionText>
                     </WrapperSubtitle>
                     <WrapperButton>
                         <PurpleButton>Try For Free</PurpleButton>
@@ -58,7 +60,7 @@ export const WrapperDiv = styled.div`
     align-items: center;
 `;
 
-export const WrapperTitle = styled.div`
+export const WrapperMainTitle = styled.div`
     width: 45.625rem;
     height: 12.25rem;
     display: flex;
@@ -69,28 +71,13 @@ export const WrapperTitle = styled.div`
     margin-top: 5.313rem;
 `;
 
-export const WrapperSubtitle = styled.div`
-    width: 37.5rem;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-`;
-
-export const Title = styled.h1`
+export const MainTitle = styled.h1`
     color: white;
     font-size: 5rem;
     font-weight: 400;
     margin: 0;
 `;
 
-export const Subtitle = styled.h2`
-    color: white;
-    font-size: 1.25rem;
-    font-weight: 200;
-`;
 
 export const WrapperButton = styled.div`
     width: 25rem;
