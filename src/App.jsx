@@ -16,26 +16,26 @@ function App() {
                 <Header>
                     <Logo />
                     <NavBar>
-                        <NavLink as={Link} to="/home">
+                        <NavLink as={Link} to="/landing-page-react">
                             Home
                         </NavLink>
-                        <NavLink as={Link} to="/product">
+                        <NavLink as={Link} to="/landing-page-react/product">
                             Product
                         </NavLink>
-                        <NavLink as={Link} to="/about">
+                        <NavLink as={Link} to="/landing-page-react/about">
                             About
                         </NavLink>
-                        <NavLink as={Link} to="/contact">
+                        <NavLink as={Link} to="/landing-page-react/contact">
                             Contact
                         </NavLink>
                     </NavBar>
                     <LoginButton>Login</LoginButton>
                 </Header>
                 <Routes>
-                    <Route path="/home" element={<Home/>} />
-                    <Route path="/product" element={<Product/>} />
-                    <Route path="/about" element={<Home/>} />
-                    <Route path="/contact" element={<Home/>} />
+                    <Route path="/landing-page-react" element={<Home/>} />
+                    <Route path="/landing-page-react/product" element={<Product/>} />
+                    <Route path="/landing-page-react/about" element={<Home/>} />
+                    <Route path="/landing-page-react/contact" element={<Home/>} />
                 </Routes>
             </Router>
         </>
