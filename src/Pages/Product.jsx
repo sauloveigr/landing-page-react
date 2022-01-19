@@ -6,6 +6,7 @@ import featuresFirst from "../assets/featuresFirst.png";
 import featuresSecond from "../assets/featuresSecond.png";
 import { WrapperSubtitle } from "../Components/WrapperSubtitle";
 import Colors from "../Colors";
+import VectorFood from "../assets/icons/VectorFood.png";
 
 function Product() {
     return (
@@ -26,10 +27,7 @@ function Product() {
                         <FirstImage />
                         <SecondImage />
                     </WrapperImage>
-
-                    <WrapperFeatures>
-
-                    </WrapperFeatures>
+                    <FeaturesImg></FeaturesImg>
                 </WrapperContent>
             </ProductSection>
         </div>
@@ -58,7 +56,6 @@ export const WrapperContent = styled.div`
 export const FirstImage = styled.img.attrs({ src: featuresFirst })`
     width: 650px;
     height: auto;
-    position: absolute;
 `;
 
 export const SecondImage = styled.img.attrs({ src: featuresSecond })`
@@ -72,7 +69,6 @@ export const SecondImage = styled.img.attrs({ src: featuresSecond })`
 export const WrapperFeatures = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    position: absolute;
     right: 40%;
 `;
 export const FeaturesDiv = styled.div`
@@ -88,6 +84,9 @@ export const FeaturesDivTitle = styled.div`
 export const FeaturesTitle = styled.h1`
     color: ${Colors.second};
     font-size: 1.25rem;
+`;
+
+export const FeaturesImg = styled.img.attrs({ src: VectorFood })`
 `;
 
 export const FeaturesText = styled.p``;
