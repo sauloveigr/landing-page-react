@@ -7,41 +7,51 @@ import featuresSecond from "../assets/featuresSecond.png";
 import { WrapperSubtitle } from "../Components/WrapperSubtitle";
 import Colors from "../Colors";
 import VectorFood from "../assets/icons/VectorFood.png";
+import { AnimatePresence, motion } from "framer-motion";
+import pageVariants from "../PageTransition/PageVariants";
+import pageTransition from "../PageTransition/PageTransition";
 
 function Product() {
     return (
         <div>
-            <ProductSection>
-                <SectionTitle>FEATURES</SectionTitle>
+            <AnimatePresence>
+                <ProductSection
+                initial="out"
+                animate="in"
+                exit="out"
+                transition={pageTransition}
+                variants={pageVariants}
+                >
+                    <SectionTitle>FEATURES</SectionTitle>
 
-                <WrapperSubtitle>
-                    <SectionText>
-                        Most calendars are designed for teams. Slate is designed
-                        for freelancers who want a simple way to plan their
-                        schedule.
-                    </SectionText>
-                </WrapperSubtitle>
+                    <WrapperSubtitle>
+                        <SectionText>
+                            Most calendars are designed for teams. Slate is
+                            designed for freelancers who want a simple way to
+                            plan their schedule.
+                        </SectionText>
+                    </WrapperSubtitle>
 
-                <WrapperContent>
-                    <WrapperImage>
-                        <FirstImage />
-                        <SecondImage />
-                    </WrapperImage>
-                    <FeaturesDiv>
-
-                    <Feature></Feature>
-                    <Feature></Feature>
-                    <Feature></Feature>
-                    </FeaturesDiv>
-                </WrapperContent>
-            </ProductSection>
+                    <WrapperContent>
+                        <WrapperImage>
+                            <FirstImage />
+                            <SecondImage />
+                        </WrapperImage>
+                        <FeaturesDiv>
+                            <Feature></Feature>
+                            <Feature></Feature>
+                            <Feature></Feature>
+                        </FeaturesDiv>
+                    </WrapperContent>
+                </ProductSection>
+            </AnimatePresence>
         </div>
     );
 }
 
 export default Product;
 
-export const ProductSection = styled.section`
+export const ProductSection = styled(motion.section)`
     height: 84vh;
 `;
 

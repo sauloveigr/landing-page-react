@@ -5,35 +5,46 @@ import BlackButton from "../Components/BlackButton";
 import PurpleButton from "../Components/PurpleButton";
 import SectionText from "../Components/SectionText";
 import { WrapperSubtitle } from "../Components/WrapperSubtitle";
+import { AnimatePresence, motion } from "framer-motion";
+import pageVariants from "../PageTransition/PageVariants";
+import pageTransition from "../PageTransition/PageTransition";
 
 function Home() {
     return (
         <div>
-            <HomeSection>
-                <WrapperDiv>
-                    <WrapperMainTitle>
-                        <MainTitle>Work at the speed of thought</MainTitle>
-                    </WrapperMainTitle>
-                    <WrapperSubtitle>
-                        <SectionText>
-                            Most calendars are designed for teams. Slate is
-                            designed for freelancers who want a simple way to
-                            plan their schedule.
-                        </SectionText>
-                    </WrapperSubtitle>
-                    <WrapperButton>
-                        <PurpleButton>Try For Free</PurpleButton>
-                        <BlackButton>Learn More</BlackButton>
-                    </WrapperButton>
-                </WrapperDiv>
-            </HomeSection>
+            <AnimatePresence>
+                <HomeSection
+                    initial="out"
+                    animate="in"
+                    exit="out"
+                    transition={pageTransition}
+                    variants={pageVariants}
+                >
+                    <WrapperDiv>
+                        <WrapperMainTitle>
+                            <MainTitle>Work at the speed of thought</MainTitle>
+                        </WrapperMainTitle>
+                        <WrapperSubtitle>
+                            <SectionText>
+                                Most calendars are designed for teams. Slate is
+                                designed for freelancers who want a simple way
+                                to plan their schedule.
+                            </SectionText>
+                        </WrapperSubtitle>
+                        <WrapperButton>
+                            <PurpleButton>Try For Free</PurpleButton>
+                            <BlackButton>Learn More</BlackButton>
+                        </WrapperButton>
+                    </WrapperDiv>
+                </HomeSection>
+            </AnimatePresence>
         </div>
     );
 }
 
 export default Home;
 
-export const HomeSection = styled.section`
+export const HomeSection = styled(motion.section)`
     background-image: url(${homeBackground});
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -77,7 +88,6 @@ export const MainTitle = styled.h1`
     font-weight: 400;
     margin: 0;
 `;
-
 
 export const WrapperButton = styled.div`
     width: 25rem;
