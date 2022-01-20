@@ -27,7 +27,12 @@ function Product() {
                         <FirstImage />
                         <SecondImage />
                     </WrapperImage>
-                    <FeaturesImg></FeaturesImg>
+                    <FeaturesDiv>
+
+                    <Feature></Feature>
+                    <Feature></Feature>
+                    <Feature></Feature>
+                    </FeaturesDiv>
                 </WrapperContent>
             </ProductSection>
         </div>
@@ -43,10 +48,11 @@ export const ProductSection = styled.section`
 export const WrapperImage = styled.div`
     width: 42rem;
     height: 41rem;
-    position: absolute;
 `;
 
 export const WrapperContent = styled.div`
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     width: 68rem;
     height: 41rem;
     margin: 0 auto;
@@ -54,7 +60,7 @@ export const WrapperContent = styled.div`
 `;
 
 export const FirstImage = styled.img.attrs({ src: featuresFirst })`
-    width: 650px;
+    width: 40.625rem;
     height: auto;
 `;
 
@@ -62,8 +68,8 @@ export const SecondImage = styled.img.attrs({ src: featuresSecond })`
     width: 400px;
     height: auto;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 1.875rem;
+    right: 51.5rem;
 `;
 
 export const WrapperFeatures = styled.div`
@@ -73,31 +79,47 @@ export const WrapperFeatures = styled.div`
 `;
 export const FeaturesDiv = styled.div`
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 16rem;
+    height: 13.5rem;
 `;
 
 export const FeaturesDivTitle = styled.div`
+    width: 12.5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 `;
 
 export const FeaturesTitle = styled.h1`
     color: ${Colors.second};
     font-size: 1.25rem;
+    margin-left: 0.938rem;
 `;
 
 export const FeaturesImg = styled.img.attrs({ src: VectorFood })`
+    width: 1.625rem;
 `;
 
-export const FeaturesText = styled.p``;
+export const FeaturesText = styled.p`
+    font-size: 1rem;
+    color: ${Colors.second};
+    margin: 0;
+`;
 
 export function Feature(props) {
     return (
         <div>
             <FeaturesDiv>
                 <FeaturesDivTitle>
-                    <FeaturesTitle>{props.title}</FeaturesTitle>
+                    <FeaturesImg></FeaturesImg>
+                    <FeaturesTitle>A single source of truth</FeaturesTitle>
                 </FeaturesDivTitle>
+                <FeaturesText>
+                    When you add work to your Slate calendar we automatically
+                    calculate useful insights
+                </FeaturesText>
             </FeaturesDiv>
         </div>
     );
