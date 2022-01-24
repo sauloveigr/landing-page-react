@@ -7,6 +7,8 @@ import featuresSecond from "../assets/featuresSecond.png";
 import { WrapperSubtitle } from "../Components/WrapperSubtitle";
 import Colors from "../Colors";
 import VectorFood from "../assets/icons/VectorFood.png";
+import VectorET from "../assets/icons/VectorET.png";
+import VectorInfinity from "../assets/icons/VectorInfinity.png";
 import { AnimatePresence, motion } from "framer-motion";
 import pageVariants from "../PageTransition/PageVariants";
 import pageTransition from "../PageTransition/PageTransition";
@@ -16,13 +18,13 @@ function Product() {
         <div>
             <AnimatePresence>
                 <ProductSection
-                initial="out"
-                animate="in"
-                exit="out"
-                transition={pageTransition}
-                variants={pageVariants}
+                    initial="out"
+                    animate="in"
+                    exit="out"
+                    transition={pageTransition}
+                    variants={pageVariants}
                 >
-                    <SectionTitle>FEATURES</SectionTitle>
+                    <SectionTitle>Features</SectionTitle>
 
                     <WrapperSubtitle>
                         <SectionText>
@@ -37,10 +39,24 @@ function Product() {
                             <FirstImage />
                             <SecondImage />
                         </WrapperImage>
+
                         <FeaturesDiv>
-                            <Feature></Feature>
-                            <Feature></Feature>
-                            <Feature></Feature>
+                            <Feature
+                                icon="food"
+                                title="A single source of truth"
+                                text="When you add work to your Slate calendar we automatically calculate useful insights"
+                            />
+                            <Feature
+                                icon="alien"
+                                title="Intuitive interface"
+                                text="When you add work to your Slate calendar we automatically calculate useful insights"
+                            />
+
+                            <Feature
+                                icon="infinity"
+                                title="Or with rules"
+                                text="When you add work to your Slate calendar we automatically calculate useful insights"
+                            />
                         </FeaturesDiv>
                     </WrapperContent>
                 </ProductSection>
@@ -50,6 +66,32 @@ function Product() {
 }
 
 export default Product;
+
+export function Feature({ icon, ...props }) {
+    const iconLib = {
+        alien: VectorET,
+        food: VectorFood,
+        infinity: VectorInfinity
+    };
+
+    return (
+        <div>
+            <FeaturesDiv>
+                <FeaturesDivTitle>
+                    <FeaturesImg src={iconLib[icon]} />
+
+                    <FeaturesTitle>{props.title}</FeaturesTitle>
+                </FeaturesDivTitle>
+
+                <FeaturesText>{props.text}</FeaturesText>
+            </FeaturesDiv>
+        </div>
+    );
+}
+
+export const FeaturesImg = styled.img`
+    width: 1.625rem;
+`;
 
 export const ProductSection = styled(motion.section)`
     height: 84vh;
@@ -99,7 +141,7 @@ export const FeaturesDivTitle = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    
 `;
 
 export const FeaturesTitle = styled.h1`
@@ -108,7 +150,11 @@ export const FeaturesTitle = styled.h1`
     margin-left: 0.938rem;
 `;
 
-export const FeaturesImg = styled.img.attrs({ src: VectorFood })`
+export const FeaturesImgET = styled.img.attrs({ src: VectorET })`
+    width: 1.625rem;
+`;
+
+export const FeaturesImgInfinity = styled.img.attrs({ src: VectorInfinity })`
     width: 1.625rem;
 `;
 
@@ -117,20 +163,3 @@ export const FeaturesText = styled.p`
     color: ${Colors.second};
     margin: 0;
 `;
-
-export function Feature(props) {
-    return (
-        <div>
-            <FeaturesDiv>
-                <FeaturesDivTitle>
-                    <FeaturesImg></FeaturesImg>
-                    <FeaturesTitle>A single source of truth</FeaturesTitle>
-                </FeaturesDivTitle>
-                <FeaturesText>
-                    When you add work to your Slate calendar we automatically
-                    calculate useful insights
-                </FeaturesText>
-            </FeaturesDiv>
-        </div>
-    );
-}
