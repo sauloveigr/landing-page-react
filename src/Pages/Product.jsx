@@ -150,14 +150,6 @@ export const FeaturesTitle = styled.h1`
     margin-left: 0.938rem;
 `;
 
-export const FeaturesImgET = styled.img.attrs({ src: VectorET })`
-    width: 1.625rem;
-`;
-
-export const FeaturesImgInfinity = styled.img.attrs({ src: VectorInfinity })`
-    width: 1.625rem;
-`;
-
 export const FeaturesText = styled.p`
     font-size: 1rem;
     color: ${Colors.second};

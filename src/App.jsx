@@ -7,7 +7,7 @@ import NavLink from "./Components/Link";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home";
 import Product from "./Pages/Product";
-import About from "./Pages/About";
+import Contents from "./Pages/Contents";
 
 function App() {
     return (
@@ -23,8 +23,8 @@ function App() {
                         <NavLink as={Link} to="/landing-page-react/product">
                             Product
                         </NavLink>
-                        <NavLink as={Link} to="/landing-page-react/about">
-                            About
+                        <NavLink as={Link} to="/landing-page-react/contents">
+                            Contents
                         </NavLink>
                         <NavLink as={Link} to="/landing-page-react/contact">
                             Contact
@@ -35,7 +35,7 @@ function App() {
                 <Routes>
                     <Route path="/landing-page-react" element={<Home/>} />
                     <Route path="/landing-page-react/product" element={<Product/>} />
-                    <Route path="/landing-page-react/about" element={<About/>} />
+                    <Route path="/landing-page-react/contents" element={<Contents/>} />
                     <Route path="/landing-page-react/contact" element={<Home/>} />
                 </Routes>
             </Router>

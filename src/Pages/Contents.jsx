@@ -11,7 +11,7 @@ import MacBookImg from "../assets/Macbook.png";
 import BoardsImg from "../assets/Boards.png";
 import { WrapperSubtitle } from "../Components/WrapperSubtitle";
 
-const About = () => {
+const Contents = () => {
     return (
         <div>
             <AnimatePresence>
@@ -32,8 +32,17 @@ const About = () => {
                     </WrapperSubtitle>
 
                     <WrapperCard>
-                        <MainCard />
-                        <MainCard />
+                        <MainCard 
+                        img="mac"
+                        title="Work"
+                        text="Ever wondered if you're too reliant on a client for
+                        work? Slate helps you identify."/>
+
+                        <MainCard 
+                        img="boards"
+                        title="Design with real data"
+                        text="Ever wondered if you're too reliant on a client for work? Slate helps you identify.                        "
+                        />
                     </WrapperCard>
                 </AboutSection>
             </AnimatePresence>
@@ -41,21 +50,26 @@ const About = () => {
     );
 };
 
-export default About;
+export default Contents;
 
-export function MainCard() {
+export function MainCard({img, ...props}) {
+    const imgLib = {
+        mac: MacBookImg,
+        boards: BoardsImg
+    }
     return (
         <div>
             <Card>
                 <WrapperTextCard>
-                    <TitleCard>Work</TitleCard>
+                    <TitleCard>{props.title}</TitleCard>
                     <TextCard>
-                        Ever wondered if you're too reliant on a client for
-                        work? Slate helps you identify.
+                        {props.text}
                     </TextCard>
                 </WrapperTextCard>
                 <PurpleButton>Sign Up</PurpleButton>
-                <MacBook />
+
+                <CardImg src={imgLib[img]} />
+
             </Card>
         </div>
     );
@@ -71,6 +85,8 @@ export const AboutSection = styled(motion.section)`
 export const Card = styled.div`
     padding: 2.5rem 0;
     width: 29.75rem;
+    min-height: 35.25rem;
+    max-height: 35.25rem;
     background-color: ${Colors.second};
     border-radius: 0.625rem;
     display: flex;
@@ -97,14 +113,8 @@ export const WrapperTextCard = styled.div`
     padding: 0.625rem;
 `;
 
-export const MacBook = styled.img.attrs({ src: MacBookImg })`
-    width: 405px;
-    height: auto;
-    margin-top: 3.563rem;
-`;
-
-export const Boards = styled.img.attrs({ src: BoardsImg })`
-    width: 405px;
+export const CardImg = styled.img`
+    width: auto;
     height: auto;
     margin-top: 3.563rem;
 `;
