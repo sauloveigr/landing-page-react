@@ -15,7 +15,7 @@ import pageTransition from "../PageTransition/PageTransition";
 
 function Product() {
     return (
-        <div>
+        <>
             <AnimatePresence>
                 <ProductSection
                     initial="out"
@@ -61,7 +61,7 @@ function Product() {
                     </WrapperContent>
                 </ProductSection>
             </AnimatePresence>
-        </div>
+        </>
     );
 }
 
@@ -75,7 +75,7 @@ export function Feature({ icon, ...props }) {
     };
 
     return (
-        <div>
+        <>
             <FeaturesDiv>
                 <FeaturesDivTitle>
                     <FeaturesImg src={iconLib[icon]} />
@@ -85,7 +85,7 @@ export function Feature({ icon, ...props }) {
 
                 <FeaturesText>{props.text}</FeaturesText>
             </FeaturesDiv>
-        </div>
+        </>
     );
 }
 

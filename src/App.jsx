@@ -34,9 +34,18 @@ function App() {
                 </Header>
                 <Routes>
                     <Route path="/landing-page-react" element={<Home/>} />
-                    <Route path="/landing-page-react/product" element={<Product/>} />
-                    <Route path="/landing-page-react/contents" element={<Contents/>} />
-                    <Route path="/landing-page-react/contact" element={<Home/>} />
+                    <Route
+                        path="/landing-page-react/product"
+                        element={<Product/>}
+                    />
+                    <Route
+                        path="/landing-page-react/contents"
+                        element={<Contents/>}
+                    />
+                    <Route
+                        path="/landing-page-react/contact"
+                        element={<Home  />}
+                    />
                 </Routes>
             </Router>
         </>

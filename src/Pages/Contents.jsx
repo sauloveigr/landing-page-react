@@ -13,7 +13,7 @@ import { WrapperSubtitle } from "../Components/WrapperSubtitle";
 
 const Contents = () => {
     return (
-        <div>
+        <>
             <AnimatePresence>
                 <AboutSection
                     initial="out"
@@ -36,17 +36,20 @@ const Contents = () => {
                         img="mac"
                         title="Work"
                         text="Ever wondered if you're too reliant on a client for
-                        work? Slate helps you identify."/>
-
+                        work? Slate helps you identify."
+                        button="Sign Up"
+                        />
+                        
                         <MainCard 
                         img="boards"
                         title="Design with real data"
-                        text="Ever wondered if you're too reliant on a client for work? Slate helps you identify.                        "
+                        text="Ever wondered if you're too reliant on a client for work? Slate helps you identify."
+                        button="Try For Free"
                         />
                     </WrapperCard>
                 </AboutSection>
             </AnimatePresence>
-        </div>
+        </>
     );
 };
 
@@ -58,7 +61,7 @@ export function MainCard({img, ...props}) {
         boards: BoardsImg
     }
     return (
-        <div>
+        <>
             <Card>
                 <WrapperTextCard>
                     <TitleCard>{props.title}</TitleCard>
@@ -66,12 +69,12 @@ export function MainCard({img, ...props}) {
                         {props.text}
                     </TextCard>
                 </WrapperTextCard>
-                <PurpleButton>Sign Up</PurpleButton>
+                <PurpleButton>{props.button}</PurpleButton>
 
                 <CardImg src={imgLib[img]} />
 
             </Card>
-        </div>
+        </>
     );
 }
 

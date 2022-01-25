@@ -11,7 +11,7 @@ import pageTransition from "../PageTransition/PageTransition";
 
 function Home() {
     return (
-        <div>
+        <>
             <AnimatePresence>
                 <HomeSection
                     initial="out"
@@ -38,7 +38,7 @@ function Home() {
                     </WrapperDiv>
                 </HomeSection>
             </AnimatePresence>
-        </div>
+        </>
     );
 }
 
