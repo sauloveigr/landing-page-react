@@ -108,7 +108,7 @@ export const WrapperContent = styled.div`
     width: 68rem;
     height: 41rem;
     margin: 0 auto;
-    margin-top: 1.8rem;
+    margin-top: 2rem;
 `;
 
 export const FirstImage = styled.img.attrs({ src: featuresFirst })`

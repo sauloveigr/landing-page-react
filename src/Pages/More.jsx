@@ -79,4 +79,5 @@ export const GalleryGrid = styled.div`
     display: flex;
     justify-content: space-between;
     width: 62.5rem;
+    margin-top: 2rem;
 `;
