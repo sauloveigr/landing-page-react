@@ -71,7 +71,7 @@ export function Feature({ icon, ...props }) {
     const iconLib = {
         alien: VectorET,
         food: VectorFood,
-        infinity: VectorInfinity
+        infinity: VectorInfinity,
     };
 
     return (
@@ -141,7 +141,6 @@ export const FeaturesDivTitle = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    
 `;
 
 export const FeaturesTitle = styled.h1`
