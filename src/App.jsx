@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home";
 import Product from "./Pages/Product";
 import Contents from "./Pages/Contents";
-import More from "./Pages/More";
+import Gallery from "./Pages/Gallery";
 
 function App() {
     return (
@@ -27,6 +27,9 @@ function App() {
                         <NavLink as={Link} to="/landing-page-react/contents">
                             Contents
                         </NavLink>
+                        <NavLink as={Link} to="/landing-page-react/gallery">
+                            Gallery
+                        </NavLink>
                         <NavLink as={Link} to="/landing-page-react/more">
                             More
                         </NavLink>
@@ -34,18 +37,18 @@ function App() {
                     <LoginButton>Login</LoginButton>
                 </Header>
                 <Routes>
-                    <Route path="/landing-page-react" element={<Home/>} />
+                    <Route path="/landing-page-react" element={<Home />} />
                     <Route
                         path="/landing-page-react/product"
-                        element={<Product/>}
+                        element={<Product />}
                     />
                     <Route
                         path="/landing-page-react/contents"
-                        element={<Contents/>}
+                        element={<Contents />}
                     />
                     <Route
-                        path="/landing-page-react/more"
-                        element={<More/>}
+                        path="/landing-page-react/gallery"
+                        element={<Gallery />}
                     />
                 </Routes>
             </Router>
