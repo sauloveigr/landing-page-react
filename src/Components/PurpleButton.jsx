@@ -10,7 +10,7 @@ const PurpleButton = styled.button`
     background-color: ${Colors.first};
     font-size: 1.07rem;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
 
     &:hover {
         color: ${Colors.second};

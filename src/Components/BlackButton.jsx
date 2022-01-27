@@ -9,7 +9,7 @@ const BlackButton = styled.button`
     background-color: ${Colors.dark};
     font-size: 1.07rem;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
 
     &:hover {
         color: ${Colors.second};
