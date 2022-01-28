@@ -9,7 +9,6 @@ const SectionTitle = styled.h1`
     justify-content: center;
     margin-top: 1.3rem;
     margin-bottom: 1.3rem;
-
 `;
 
 export default SectionTitle;

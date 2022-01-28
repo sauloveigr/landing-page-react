@@ -12,7 +12,9 @@ import Partner3 from "../assets/icons/partner3.png";
 import Partner4 from "../assets/icons/partner4.png";
 import Partner5 from "../assets/icons/partner5.png";
 import Partner6 from "../assets/icons/partner6.png";
+import FeatureBg from "../assets/FeatureBg.png";
 import Colors from "../Colors";
+import PurpleButton from "../Components/PurpleButton";
 
 const More = () => {
     return (
@@ -43,9 +45,12 @@ const More = () => {
                         </PartnerDiv>
                     </PartnerSection>
                     <Feature>
-                        <SectionTitle>
-                            OpenType features and Variable fonts
-                        </SectionTitle>
+                        <WrapperFeatureTitle>
+                            <FeatureTitle>
+                                OpenType features and Variable fonts
+                            </FeatureTitle>
+                            <PurpleButton>Try For Free</PurpleButton>
+                        </WrapperFeatureTitle>
                     </Feature>
                     <Footer></Footer>
                 </MoreArticle>
@@ -99,12 +104,31 @@ export const Feature = styled.div`
     border-radius: 2rem;
     padding-left: 5.8rem;
     display: flex;
+    text-align: left;
+    align-items: center;
+    background-image: url(${FeatureBg});
+    background-repeat: no-repeat;
+    background-size: 46%;
+    background-position: right;
 `;
 
 export const FeatureTitle = styled.h1`
     font-size: 3.25rem;
     font-weight: 400;
     color: ${Colors.second};
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+`;
+
+export const WrapperFeatureTitle = styled.div`
+    height: 15.5rem;
+    width: 31rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
 `;
 
 export const Footer = styled.footer`
