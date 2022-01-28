@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/landing-page-react/static/js/main.c8c7391a.js",
+    "main.js": "/landing-page-react/static/js/main.2649bb75.js",
     "static/media/featuresFirst.png": "/landing-page-react/static/media/featuresFirst.0aaf1440d3b40284cf91.png",
     "static/media/homeBackground.png": "/landing-page-react/static/media/homeBackground.4a8c6ce327278cefe28a.png",
     "static/media/fibre.png": "/landing-page-react/static/media/fibre.aaa15050c170e6d01563.png",
+    "static/media/earth.png": "/landing-page-react/static/media/earth.e110e3b8a40cbe3c51c2.png",
     "static/media/featuresSecond.png": "/landing-page-react/static/media/featuresSecond.5e4d2bad479dfbb667ae.png",
+    "static/media/plasma.png": "/landing-page-react/static/media/plasma.437aec5e6f0da7adc296.png",
     "static/media/note.png": "/landing-page-react/static/media/note.3350e2017630093c3fa9.png",
-    "static/media/room.png": "/landing-page-react/static/media/room.cdbb0252fe061bd60ca0.png",
+    "static/media/dev.png": "/landing-page-react/static/media/dev.53e50b163a9097cc555e.png",
     "static/media/code.png": "/landing-page-react/static/media/code.3ba6835e269c905d5f2f.png",
     "static/media/Boards.png": "/landing-page-react/static/media/Boards.6b2472b7182595e3510b.png",
+    "static/media/pen.png": "/landing-page-react/static/media/pen.c68638afa1d56d15807c.png",
     "static/media/Macbook.png": "/landing-page-react/static/media/Macbook.55ee1af9aa89e298ead7.png",
     "index.html": "/landing-page-react/index.html",
-    "main.c8c7391a.js.map": "/landing-page-react/static/js/main.c8c7391a.js.map"
+    "main.2649bb75.js.map": "/landing-page-react/static/js/main.2649bb75.js.map"
   },
   "entrypoints": [
-    "static/js/main.c8c7391a.js"
+    "static/js/main.2649bb75.js"
   ]
 }
