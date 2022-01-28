@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 import Product from "./Pages/Product";
 import Contents from "./Pages/Contents";
 import Gallery from "./Pages/Gallery";
+import More from "./Pages/More";
 
 function App() {
     return (
@@ -50,6 +51,7 @@ function App() {
                         path="/landing-page-react/gallery"
                         element={<Gallery />}
                     />
+                    <Route path="/landing-page-react/more" element={<More />} />
                 </Routes>
             </Router>
         </>
