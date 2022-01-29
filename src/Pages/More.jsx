@@ -12,9 +12,16 @@ import Partner3 from "../assets/icons/partner3.png";
 import Partner4 from "../assets/icons/partner4.png";
 import Partner5 from "../assets/icons/partner5.png";
 import Partner6 from "../assets/icons/partner6.png";
+import Map from "../assets/icons/map.png";
+import Phone from "../assets/icons/phone.png";
+import Facebook from "../assets/icons/facebook.png";
+import Linkedin from "../assets/icons/linkedin.png";
+import Twitter from "../assets/icons/twitter.png";
 import FeatureBg from "../assets/FeatureBg.png";
 import Colors from "../Colors";
 import PurpleButton from "../Components/PurpleButton";
+import FooterLink from "../Components/Link";
+import { Link } from "react-router-dom";
 
 const More = () => {
     return (
@@ -52,7 +59,41 @@ const More = () => {
                             <PurpleButton>Try For Free</PurpleButton>
                         </WrapperFeatureTitle>
                     </Feature>
-                    <Footer></Footer>
+                    <Footer>
+                        <WrapperFooter>
+                            <WrapperLinks>
+                                <FooterUl>
+                                    <FooterLi>
+                                        <FooterLink
+                                            as={Link}
+                                            to="/landing-page-react"
+                                        >
+                                            Home
+                                        </FooterLink>
+                                        <FooterLink
+                                            as={Link}
+                                            to="/landing-page-react/product"
+                                        >
+                                            Product
+                                        </FooterLink>
+                                        <FooterLink
+                                            as={Link}
+                                            to="/landing-page-react/contents"
+                                        >
+                                            Contents
+                                        </FooterLink>
+                                        <FooterLink
+                                            as={Link}
+                                            to="/landing-page-react/gallery"
+                                        >
+                                            Gallery
+                                        </FooterLink>
+                                    </FooterLi>
+                                </FooterUl>
+                            </WrapperLinks>
+                            <Contacts />
+                        </WrapperFooter>
+                    </Footer>
                 </MoreArticle>
             </AnimatePresence>
         </>
@@ -77,6 +118,95 @@ export function Partners({ icon, ...props }) {
     );
 }
 
+export function Contacts() {
+    return (
+        <>
+            <WrapperContacts>
+                <WrapperContact>
+                    <Contact
+                        icon="map"
+                        text="7480 Mockingbird Hill undefined
+                    "
+                    />
+                </WrapperContact>
+                <WrapperContact>
+                    <Contact icon="phone" text="(239) 555-0108" />
+                </WrapperContact>
+            </WrapperContacts>
+            <WrapperSocial>
+                <Social icon="facebook" />
+                <Social icon="twitter" />
+                <Social icon="linkedin" />
+            </WrapperSocial>
+        </>
+    );
+}
+
+export function Contact({ icon, ...props }) {
+    const iconLib = {
+        map: Map,
+        phone: Phone,
+    };
+    return (
+        <>
+            <ContactImg src={iconLib[icon]} />
+            <ContactText>{props.text}</ContactText>
+        </>
+    );
+}
+
+export function Social({ icon, ...props }) {
+    const iconLib = {
+        twitter: Twitter,
+        facebook: Facebook,
+        linkedin: Linkedin,
+    };
+    return (
+        <>
+            <SocialImg src={iconLib[icon]} />
+        </>
+    );
+}
+
+export const WrapperSocial = styled.div`
+    display: flex;
+    width: 10.625rem;
+    justify-content: space-between;
+`;
+
+export const SocialImg = styled.img`
+    width: 2.188rem;
+    height: 2.188rem;
+    cursor: pointer;
+`;
+
+export const WrapperContacts = styled.div`
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const WrapperContact = styled.div`
+    width: 20rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+`;
+
+export const ContactText = styled.p`
+    font-size: 0.8rem;
+    color: ${Colors.second};
+`;
+
+export const ContactImg = styled.img`
+    width: 2.188rem;
+    height: 2.188rem;
+    margin-right: 0.6rem;
+`;
+
 export const MoreArticle = styled(motion.article)`
     height: 84vh;
     display: flex;
@@ -91,15 +221,16 @@ export const PartnerDiv = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 2.5rem;
 `;
 
 export const PartnerIcon = styled.img``;
 
 export const Feature = styled.div`
-    width: 75rem;
-    height: 23rem;
+    width: 65rem;
+    height: 20rem;
+    margin-top: 3.8rem;
     background-color: ${Colors.darkGrey};
     border-radius: 2rem;
     padding-left: 5.8rem;
@@ -108,12 +239,12 @@ export const Feature = styled.div`
     align-items: center;
     background-image: url(${FeatureBg});
     background-repeat: no-repeat;
-    background-size: 46%;
-    background-position: right;
+    background-size: 45%;
+    background-position: right bottom;
 `;
 
 export const FeatureTitle = styled.h1`
-    font-size: 3.25rem;
+    font-size: 3rem;
     font-weight: 400;
     color: ${Colors.second};
     display: flex;
@@ -133,8 +264,39 @@ export const WrapperFeatureTitle = styled.div`
 
 export const Footer = styled.footer`
     width: 100%;
-    background-color: #202020;
-    height: 15vh;
+    /* background-color: #202020; */
+    height: 14vh;
     position: absolute;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const WrapperFooter = styled.div`
+    width: 55rem;
+    height: auto;
+    /* background-color: #303030; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+`;
+
+export const WrapperLinks = styled.div`
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`;
+
+export const FooterUl = styled.ul`
+    padding: 0;
+`;
+export const FooterLi = styled.li`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 1.5rem;
 `;
