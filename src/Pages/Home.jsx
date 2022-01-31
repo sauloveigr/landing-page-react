@@ -48,7 +48,7 @@ export const HomeSection = styled(motion.section)`
     background-image: url(${homeBackground});
     background-repeat: no-repeat;
     background-position-y: bottom;
-    background-position-x: 10.969rem;
+    background-position-x: center;
     height: 89vh;
 `;
 
