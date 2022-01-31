@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/landing-page-react/static/js/main.8cf90ba4.js",
+    "main.js": "/landing-page-react/static/js/main.47106322.js",
     "static/media/featuresFirst.png": "/landing-page-react/static/media/featuresFirst.0aaf1440d3b40284cf91.png",
-    "static/media/homeBackground.png": "/landing-page-react/static/media/homeBackground.4a8c6ce327278cefe28a.png",
+    "static/media/homeBackground.png": "/landing-page-react/static/media/homeBackground.1a723ebd24fd1a2368b4.png",
     "static/media/fibre.png": "/landing-page-react/static/media/fibre.aaa15050c170e6d01563.png",
     "static/media/earth.png": "/landing-page-react/static/media/earth.e110e3b8a40cbe3c51c2.png",
     "static/media/FeatureBg.png": "/landing-page-react/static/media/FeatureBg.9bb280c1ac894447b3b5.png",
@@ -15,9 +15,9 @@
     "static/media/pen.png": "/landing-page-react/static/media/pen.c68638afa1d56d15807c.png",
     "static/media/Macbook.png": "/landing-page-react/static/media/Macbook.55ee1af9aa89e298ead7.png",
     "index.html": "/landing-page-react/index.html",
-    "main.8cf90ba4.js.map": "/landing-page-react/static/js/main.8cf90ba4.js.map"
+    "main.47106322.js.map": "/landing-page-react/static/js/main.47106322.js.map"
   },
   "entrypoints": [
-    "static/js/main.8cf90ba4.js"
+    "static/js/main.47106322.js"
   ]
 }
