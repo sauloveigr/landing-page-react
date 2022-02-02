@@ -72,7 +72,7 @@ export function Feature({ ...props }) {
         <>
             <FeaturesDiv>
                 <FeaturesDivTitle>
-                    <ImgTest src={props.src} />
+                    <FeaturesImg src={props.src} />
 
                     <FeaturesTitle>{props.title}</FeaturesTitle>
                 </FeaturesDivTitle>
@@ -83,11 +83,7 @@ export function Feature({ ...props }) {
     );
 }
 
-export const ImgTest = styled.img.attrs((props) => ({ src: props.src }))`
-    width: 1.625rem;
-`;
-
-export const FeaturesImg = styled.img`
+export const FeaturesImg = styled.img.attrs((props) => ({ src: props.src }))`
     width: 1.625rem;
 `;
 

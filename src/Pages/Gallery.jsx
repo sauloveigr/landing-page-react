@@ -33,15 +33,15 @@ const Gallery = () => {
                         </SectionText>
                     </WrapperSubtitle>
                     <GalleryGrid>
-                        <ImageGallery src={Note} />
-                        <ImageGallery src={Fibre} />
-                        <ImageGallery src={Code} />
-                        <ImageGallery src={Pen} />
+                        <Image src={Note} />
+                        <Image src={Fibre} />
+                        <Image src={Code} />
+                        <Image src={Pen} />
                     </GalleryGrid>
                     <GalleryGrid2>
-                        <ImageGallery src={Earth} />
-                        <ImageGallery src={Dev} />
-                        <ImageGallery src={Plasma} />
+                        <Image src={Earth} />
+                        <Image src={Dev} />
+                        <Image src={Plasma} />
                     </GalleryGrid2>
                 </GallerySection>
             </AnimatePresence>
@@ -50,14 +50,6 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
-export function ImageGallery({ ...props }) {
-    return (
-        <>
-            <Image src={props.src} />
-        </>
-    );
-}
 
 export const Image = styled.img.attrs((props) => ({ src: props.src }))`
     width: 14.375rem;
