@@ -33,15 +33,15 @@ const Gallery = () => {
                         </SectionText>
                     </WrapperSubtitle>
                     <GalleryGrid>
-                        <ImageGallery img="note" />
-                        <ImageGallery img="fibre" />
-                        <ImageGallery img="code" />
-                        <ImageGallery img="pen" />
+                        <ImageGallery src={Note} />
+                        <ImageGallery src={Fibre} />
+                        <ImageGallery src={Code} />
+                        <ImageGallery src={Pen} />
                     </GalleryGrid>
                     <GalleryGrid2>
-                        <ImageGallery img="earth" />
-                        <ImageGallery img="dev" />
-                        <ImageGallery img="plasma" />
+                        <ImageGallery src={Earth} />
+                        <ImageGallery src={Dev} />
+                        <ImageGallery src={Plasma} />
                     </GalleryGrid2>
                 </GallerySection>
             </AnimatePresence>
@@ -51,23 +51,19 @@ const Gallery = () => {
 
 export default Gallery;
 
-export function ImageGallery({ img, ...props }) {
-    const imageLib = {
-        fibre: Fibre,
-        note: Note,
-        code: Code,
-        pen: Pen,
-        plasma: Plasma,
-        earth: Earth,
-        dev: Dev,
-    };
-
+export function ImageGallery({ ...props }) {
     return (
         <>
-            <Image src={imageLib[img]} />
+            <Image src={props.src} />
         </>
     );
 }
+
+export const Image = styled.img.attrs((props) => ({ src: props.src }))`
+    width: 14.375rem;
+    height: 18.125rem;
+    border-radius: 0.75rem;
+`;
 
 export const GallerySection = styled(motion.section)`
     height: 84vh;
@@ -78,18 +74,6 @@ export const GallerySection = styled(motion.section)`
 
 export const GalleryDiv = styled.div`
     width: 62.5rem;
-`;
-
-export const Image = styled.img`
-    width: 14.375rem;
-    height: 18.125rem;
-    border-radius: 0.75rem;
-`;
-
-export const BigImage = styled.img`
-    width: 18rem;
-    height: 18.125rem;
-    border-radius: 0.75rem;
 `;
 
 export const GalleryGrid = styled.div`

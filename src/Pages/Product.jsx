@@ -42,18 +42,18 @@ function Product() {
 
                         <FeaturesDiv>
                             <Feature
-                                icon="food"
+                                src={VectorFood}
                                 title="A single source of truth"
                                 text="When you add work to your Slate calendar we automatically calculate useful insights"
                             />
                             <Feature
-                                icon="alien"
+                                src={VectorET}
                                 title="Intuitive interface"
                                 text="When you add work to your Slate calendar we automatically calculate useful insights"
                             />
 
                             <Feature
-                                icon="infinity"
+                                src={VectorInfinity}
                                 title="Or with rules"
                                 text="When you add work to your Slate calendar we automatically calculate useful insights"
                             />
@@ -67,18 +67,12 @@ function Product() {
 
 export default Product;
 
-export function Feature({ icon, ...props }) {
-    const iconLib = {
-        alien: VectorET,
-        food: VectorFood,
-        infinity: VectorInfinity,
-    };
-
+export function Feature({ ...props }) {
     return (
         <>
             <FeaturesDiv>
                 <FeaturesDivTitle>
-                    <FeaturesImg src={iconLib[icon]} />
+                    <ImgTest src={props.src} />
 
                     <FeaturesTitle>{props.title}</FeaturesTitle>
                 </FeaturesDivTitle>
@@ -88,6 +82,10 @@ export function Feature({ icon, ...props }) {
         </>
     );
 }
+
+export const ImgTest = styled.img.attrs((props) => ({ src: props.src }))`
+    width: 1.625rem;
+`;
 
 export const FeaturesImg = styled.img`
     width: 1.625rem;
