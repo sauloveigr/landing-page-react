@@ -1,5 +1,5 @@
-import styled from 'styled-components'; 
-import Colors from '../Colors';
+import styled from "styled-components";
+import Colors from "../Colors";
 
 const SectionText = styled.p`
     color: ${Colors.second};
@@ -7,6 +7,6 @@ const SectionText = styled.p`
     font-weight: 400;
     display: flex;
     justify-content: center;
-`
+`;
 
 export default SectionText;

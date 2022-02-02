@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const NavBar = styled.nav`
     width: 30.5rem;
@@ -7,5 +7,5 @@ const NavBar = styled.nav`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-`
+`;
 export default NavBar;

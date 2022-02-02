@@ -32,19 +32,19 @@ const Contents = () => {
                     </WrapperSubtitle>
 
                     <WrapperCard>
-                        <MainCard 
-                        img="mac"
-                        title="Work"
-                        text="Ever wondered if you're too reliant on a client for
+                        <MainCard
+                            img="mac"
+                            title="Work"
+                            text="Ever wondered if you're too reliant on a client for
                         work? Slate helps you identify."
-                        button="Sign Up"
+                            button="Sign Up"
                         />
-                        
-                        <MainCard 
-                        img="boards"
-                        title="Design with real data"
-                        text="Ever wondered if you're too reliant on a client for work? Slate helps you identify."
-                        button="Try For Free"
+
+                        <MainCard
+                            img="boards"
+                            title="Design with real data"
+                            text="Ever wondered if you're too reliant on a client for work? Slate helps you identify."
+                            button="Try For Free"
                         />
                     </WrapperCard>
                 </AboutSection>
@@ -55,24 +55,21 @@ const Contents = () => {
 
 export default Contents;
 
-export function MainCard({img, ...props}) {
+export function MainCard({ img, ...props }) {
     const imgLib = {
         mac: MacBookImg,
-        boards: BoardsImg
-    }
+        boards: BoardsImg,
+    };
     return (
         <>
             <Card>
                 <WrapperTextCard>
                     <TitleCard>{props.title}</TitleCard>
-                    <TextCard>
-                        {props.text}
-                    </TextCard>
+                    <TextCard>{props.text}</TextCard>
                 </WrapperTextCard>
                 <PurpleButton>{props.button}</PurpleButton>
 
                 <CardImg src={imgLib[img]} />
-
             </Card>
         </>
     );

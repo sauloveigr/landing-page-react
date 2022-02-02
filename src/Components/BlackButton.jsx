@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Colors from '../Colors';
+import Colors from "../Colors";
 
 const BlackButton = styled.button`
     width: 11.25rem;

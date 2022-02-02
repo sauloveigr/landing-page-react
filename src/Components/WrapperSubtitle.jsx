@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const WrapperSubtitle = styled.div`
     width: 37.5rem;

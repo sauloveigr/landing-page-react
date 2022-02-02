@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import Colors from '../Colors';
-
+import Colors from "../Colors";
 
 const PurpleButton = styled.button`
     width: 11.25rem;

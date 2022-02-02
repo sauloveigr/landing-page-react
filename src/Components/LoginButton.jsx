@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Colors from '../Colors';
+import Colors from "../Colors";
 
 const BlackButton = styled.button`
     width: 8.688rem;
@@ -10,7 +10,6 @@ const BlackButton = styled.button`
     font-size: 1.07rem;
     cursor: pointer;
     transition: 0.4s;
-
 
     &:hover {
         color: ${Colors.second};
