@@ -5,7 +5,7 @@ import NavBar from "./Components/NavBar";
 import LoginButton from "./Components/LoginButton";
 import NavLink from "./Components/Link";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import Product from "./Pages/Product";
 import Contents from "./Pages/Contents";
 import Gallery from "./Pages/Gallery";
