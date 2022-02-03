@@ -43,12 +43,12 @@ const More = () => {
                             </SectionText>
                         </WrapperSubtitle>
                         <PartnerDiv>
-                            <Partners icon="partner1" />
-                            <Partners icon="partner2" />
-                            <Partners icon="partner3" />
-                            <Partners icon="partner4" />
-                            <Partners icon="partner5" />
-                            <Partners icon="partner6" />
+                            <PartnerIcon src={Partner1} />
+                            <PartnerIcon src={Partner2} />
+                            <PartnerIcon src={Partner3} />
+                            <PartnerIcon src={Partner4} />
+                            <PartnerIcon src={Partner5} />
+                            <PartnerIcon src={Partner6} />
                         </PartnerDiv>
                     </PartnerSection>
                     <Feature>
@@ -102,21 +102,7 @@ const More = () => {
 
 export default More;
 
-export function Partners({ icon, ...props }) {
-    const partnerLib = {
-        partner1: Partner1,
-        partner2: Partner2,
-        partner3: Partner3,
-        partner4: Partner4,
-        partner5: Partner5,
-        partner6: Partner6,
-    };
-    return (
-        <>
-            <PartnerIcon src={partnerLib[icon]} />
-        </>
-    );
-}
+export const PartnerIcon = styled.img.attrs((props) => ({ src: props.src }))``;
 
 export function Contacts() {
     return (
@@ -125,8 +111,7 @@ export function Contacts() {
                 <WrapperContact>
                     <Contact
                         icon="map"
-                        text="7480 Mockingbird Hill undefined
-                    "
+                        text="7480 Mockingbird Hill undefined"
                     />
                 </WrapperContact>
                 <WrapperContact>
@@ -224,8 +209,6 @@ export const PartnerDiv = styled.div`
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
 `;
-
-export const PartnerIcon = styled.img``;
 
 export const Feature = styled.div`
     width: 65rem;
