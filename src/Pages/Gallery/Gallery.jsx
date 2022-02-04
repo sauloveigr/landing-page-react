@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import pageVariants from "../../PageTransition/PageVariants";
 import pageTransition from "../../PageTransition/PageTransition";
 import SectionTitle from "../../Components/SectionTitle";
@@ -13,6 +12,13 @@ import Earth from "../../assets/earth.png";
 import Plasma from "../../assets/plasma.png";
 import Dev from "../../assets/dev.png";
 import { WrapperSubtitle } from "../../Components/WrapperSubtitle";
+
+import {
+    Image,
+    GallerySection,
+    GalleryGrid,
+    GalleryGrid2,
+} from "../Gallery/Gallery.style";
 
 const Gallery = () => {
     return (
@@ -50,36 +56,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
-export const Image = styled.img.attrs((props) => ({ src: props.src }))`
-    width: 14.375rem;
-    height: 18.125rem;
-    border-radius: 0.75rem;
-`;
-
-export const GallerySection = styled(motion.section)`
-    height: 84vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
-
-export const GalleryDiv = styled.div`
-    width: 62.5rem;
-`;
-
-export const GalleryGrid = styled.div`
-    display: grid;
-    width: 62.5rem;
-    margin-top: 2rem;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-`;
-
-export const GalleryGrid2 = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 47rem;
-    margin-top: 2rem;
-    gap: 2rem;
-`;
