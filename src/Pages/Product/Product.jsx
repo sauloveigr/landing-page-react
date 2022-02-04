@@ -1,13 +1,13 @@
 import React from "react";
-import SectionText from "../Components/SectionText";
-import SectionTitle from "../Components/SectionTitle";
-import { WrapperSubtitle } from "../Components/WrapperSubtitle";
-import VectorFood from "../assets/icons/VectorFood.png";
-import VectorET from "../assets/icons/VectorET.png";
-import VectorInfinity from "../assets/icons/VectorInfinity.png";
+import SectionText from "../../Components/SectionText";
+import SectionTitle from "../../Components/SectionTitle";
+import { WrapperSubtitle } from "../../Components/WrapperSubtitle";
+import VectorFood from "../../assets/icons/VectorFood.png";
+import VectorET from "../../assets/icons/VectorET.png";
+import VectorInfinity from "../../assets/icons/VectorInfinity.png";
 import { AnimatePresence } from "framer-motion";
-import pageVariants from "../PageTransition/PageVariants";
-import pageTransition from "../PageTransition/PageTransition";
+import pageVariants from "../../PageTransition/PageVariants";
+import pageTransition from "../../PageTransition/PageTransition";
 import {
     ProductSection,
     FeaturesImg,
@@ -19,7 +19,7 @@ import {
     FeaturesText,
     WrapperContent,
     FeaturesTitle,
-} from "../Pages/Product/Product.style";
+} from "./Product.style";
 
 function Product() {
     return (

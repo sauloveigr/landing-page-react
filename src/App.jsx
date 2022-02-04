@@ -6,10 +6,11 @@ import LoginButton from "./Components/LoginButton";
 import NavLink from "./Components/Link";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import Product from "./Pages/Product";
-import Contents from "./Pages/Contents";
-import Gallery from "./Pages/Gallery";
-import More from "./Pages/More";
+import Product from "./Pages/Product/Product";
+import Contents from "./Pages/Content/Contents";
+import Gallery from "./Pages/Gallery/Gallery";
+import More from "./Pages/More/More";
+import { MenuLogo } from "./Components/MenuLogo";
 
 function App() {
     return (
@@ -36,6 +37,7 @@ function App() {
                         </NavLink>
                     </NavBar>
                     <LoginButton>Login</LoginButton>
+                    <MenuLogo/>
                 </Header>
                 <Routes>
                     <Route path="/landing-page-react" element={<Home />} />

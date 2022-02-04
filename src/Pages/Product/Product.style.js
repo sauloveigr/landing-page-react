@@ -4,6 +4,7 @@ import featuresSecond from "../../assets/featuresSecond.png";
 import Colors from "../../Colors";
 import { motion } from "framer-motion";
 
+
 export const FeaturesImg = styled.img.attrs((props) => ({ src: props.src }))`
     width: 1.625rem;
 `;

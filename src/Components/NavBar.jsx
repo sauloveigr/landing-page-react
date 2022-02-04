@@ -7,5 +7,10 @@ const NavBar = styled.nav`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 480px) {
+        display: none;
+        overflow: hidden;
+    }
 `;
 export default NavBar;
