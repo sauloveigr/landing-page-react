@@ -1,7 +1,7 @@
+import React from "react";
 import { AnimatePresence } from "framer-motion";
 import pageTransition from "../../PageTransition/PageTransition";
 import pageVariants from "../../PageTransition/PageVariants";
-import React from "react";
 import SectionTitle from "../../Components/SectionTitle";
 import SectionText from "../../Components/SectionText";
 import PurpleButton from "../../Components/PurpleButton";

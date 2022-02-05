@@ -6,6 +6,6 @@ export const MenuLogo = styled.img.attrs({ src: Menu })`
     display: none;
 
     @media (max-width: 480px) {
-        display: flex;
+        display: inline;
     }
 `;

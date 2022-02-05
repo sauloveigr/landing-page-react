@@ -9,6 +9,10 @@ export const HomeSection = styled(motion.section)`
     background-position-y: bottom;
     background-position-x: center;
     height: 89vh;
+
+    @media (max-width: 480px) {
+        height: 83.875rem;
+    }
 `;
 
 export const WrapperDiv = styled.div`
@@ -29,6 +33,12 @@ export const WrapperMainTitle = styled.div`
     text-align: center;
     margin-bottom: 1.25rem;
     margin-top: 5.313rem;
+
+    @media (max-width: 480px) {
+        width: 19.625rem;
+        margin-bottom: 7.125rem;
+        margin-top: 21.25rem;
+    }
 `;
 
 export const MainTitle = styled.h1`
@@ -36,6 +46,10 @@ export const MainTitle = styled.h1`
     font-size: 5rem;
     font-weight: 400;
     margin: 0;
+
+    @media (max-width: 480px) {
+        font-size: 3.25rem;
+    }
 `;
 
 export const WrapperButton = styled.div`
@@ -45,4 +59,9 @@ export const WrapperButton = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-top: 2.5rem;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        gap: 1.313rem;
+    }
 `;
