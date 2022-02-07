@@ -3,7 +3,7 @@ import Colors from "../Colors";
 
 const PurpleButton = styled.button`
     width: 11.25rem;
-    height: 4.063rem;
+    height: 3.25rem;
     border: 1px solid ${Colors.first};
     color: ${Colors.light};
     background-color: ${Colors.first};

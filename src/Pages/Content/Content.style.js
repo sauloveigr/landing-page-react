@@ -20,6 +20,10 @@ export const Card = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    @media (max-width: 480px) {
+        width: 21.75rem;
+    }
 `;
 
 export const TitleCard = styled.h1`
@@ -44,6 +48,10 @@ export const CardImg = styled.img`
     width: auto;
     height: auto;
     margin-top: 3.563rem;
+
+    @media (max-width: 480px) {
+    width: 18rem;
+    }
 `;
 
 export const WrapperCard = styled.div`
@@ -52,4 +60,12 @@ export const WrapperCard = styled.div`
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2rem;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.063rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
 `;
