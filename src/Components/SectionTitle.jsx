@@ -9,6 +9,10 @@ const SectionTitle = styled.h1`
     justify-content: center;
     margin-top: 1.3rem;
     margin-bottom: 1.3rem;
+
+    @media (max-width: 480px) {
+        margin-bottom: 1.688rem;
+    }
 `;
 
 export default SectionTitle;

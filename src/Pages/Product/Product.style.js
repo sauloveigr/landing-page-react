@@ -10,6 +10,7 @@ export const FeaturesImg = styled.img.attrs((props) => ({ src: props.src }))`
 
 export const ProductSection = styled(motion.section)`
     height: 84vh;
+    align-items: center;
 
     @media (max-width: 480px) {
         width: 34.313rem;
@@ -21,8 +22,14 @@ export const WrapperImage = styled.div`
     height: 41rem;
 
     @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #202020; */
         height: 25.375rem;
         width: 23.5rem;
+        margin-bottom: 7rem;
     }
 `;
 
@@ -35,10 +42,12 @@ export const WrapperContent = styled.div`
     margin-top: 2rem;
 
     @media (max-width: 480px) {
+        margin-top: 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 23.625rem;
+        height: 20rem;
     }
 `;
 
@@ -57,6 +66,13 @@ export const SecondImage = styled.img.attrs({ src: featuresSecond })`
     position: absolute;
     bottom: 1.875rem;
     right: 51.5rem;
+
+    @media (max-width: 480px) {
+        bottom: 16.4rem;
+        right: 5.313rem;
+        position: absolute;
+        width: 14.375rem;
+    }
 `;
 
 export const FeaturesDiv = styled.div`

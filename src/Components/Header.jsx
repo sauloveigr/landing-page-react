@@ -10,10 +10,9 @@ const Header = styled.header`
     padding: 0 2.5rem;
 
     @media (max-width: 480px) {
-        width: 34.375rem;
+        width: 30rem;
         height: 6.75rem;
-        padding-left: 2.25rem;
-        padding-right: 1rem;
+        padding: 0 2.125rem;
     }
 `;
 

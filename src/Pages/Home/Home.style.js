@@ -12,6 +12,7 @@ export const HomeSection = styled(motion.section)`
 
     @media (max-width: 480px) {
         height: 120vh;
+        width: 30rem;
     }
 `;
 
