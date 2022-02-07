@@ -24,6 +24,14 @@ export const GalleryGrid = styled.div`
     margin-top: 2rem;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        align-items: center;
+        margin-top: 0;
+    }
 `;
 
 export const GalleryGrid2 = styled.div`
@@ -32,4 +40,11 @@ export const GalleryGrid2 = styled.div`
     width: 47rem;
     margin-top: 2rem;
     gap: 2rem;
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        align-items: center;
+    }
 `;

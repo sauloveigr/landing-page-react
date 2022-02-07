@@ -70,7 +70,6 @@ export const SecondImage = styled.img.attrs({ src: featuresSecond })`
     @media (max-width: 480px) {
         bottom: 16.4rem;
         right: 5.313rem;
-        position: absolute;
         width: 14.375rem;
     }
 `;
