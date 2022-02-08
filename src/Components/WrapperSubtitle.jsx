@@ -9,8 +9,8 @@ export const WrapperSubtitle = styled.div`
     text-align: center;
     margin: 0 auto;
 
-    @media (max-width: 500px) {
-        width: 25rem;
+    @media (max-width: 480px) {
+        width: 81vw;
         margin-bottom: 3.563rem;
     }
 `;

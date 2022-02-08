@@ -8,9 +8,8 @@ const NavBar = styled.nav`
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 500px) {
+    @media (max-width: 480px) {
         display: none;
-        overflow: hidden;
     }
 `;
 export default NavBar;

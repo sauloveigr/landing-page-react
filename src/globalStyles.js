@@ -8,13 +8,12 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         background-color: ${Colors.dark};
         font-family: 'Be Vietnam Pro', sans-serif;
+        font-size: 100%;
+
+        @media (max-width: 480px) {
+            overflow-x: hidden;
+        }
     }
-
-    :root {
-    --base-color: #4452fe
-    --light-color: #fff
-
-}
 `;
 
 export default GlobalStyle;

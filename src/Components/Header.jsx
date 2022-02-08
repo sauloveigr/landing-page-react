@@ -9,11 +9,12 @@ const Header = styled.header`
     justify-content: space-between;
     padding: 0 2.5rem;
 
-    @media (max-width: 500px) {
-        width: 27rem;
+    @media (max-width: 480px) {
+        width: 100vw;
         height: 6.688rem;
         padding: 0;
-    }
+        margin: 0;
+        overflow: hidden;
 `;
 
 export default Header;
