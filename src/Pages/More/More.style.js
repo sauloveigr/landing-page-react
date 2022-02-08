@@ -58,6 +58,16 @@ export const PartnerDiv = styled.div`
     align-items: center;
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
+
+    @media (max-width: 480px) {
+        /* background-color: grey; */
+        width: 25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3.125rem;
+        justify-content: center;
+        align-content: center;
+    }
 `;
 
 export const Feature = styled.div`

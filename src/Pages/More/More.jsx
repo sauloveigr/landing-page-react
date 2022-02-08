@@ -119,7 +119,9 @@ const More = () => {
 
 export default More;
 
-export const PartnerIcon = styled.img.attrs((props) => ({ src: props.src }))``;
+export const PartnerIcon = styled.img.attrs((props) => ({ src: props.src }))`
+    
+`;
 
 export function Contacts() {
     return (

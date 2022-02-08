@@ -9,10 +9,10 @@ const Header = styled.header`
     justify-content: space-between;
     padding: 0 2.5rem;
 
-    @media (max-width: 480px) {
-        width: 30rem;
-        height: 6.75rem;
-        padding: 0 2.125rem;
+    @media (max-width: 500px) {
+        width: 27rem;
+        height: 6.688rem;
+        padding: 0;
     }
 `;
 

@@ -9,7 +9,7 @@ export const WrapperSubtitle = styled.div`
     text-align: center;
     margin: 0 auto;
 
-    @media (max-width: 480px) {
+    @media (max-width: 500px) {
         width: 25rem;
         margin-bottom: 3.563rem;
     }
