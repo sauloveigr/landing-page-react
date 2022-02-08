@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/landing-page-react/static/js/main.925d5461.js",
+    "main.js": "/landing-page-react/static/js/main.7973eeb2.js",
     "static/media/featuresFirst.png": "/landing-page-react/static/media/featuresFirst.0aaf1440d3b40284cf91.png",
     "static/media/homeBackground.png": "/landing-page-react/static/media/homeBackground.1a723ebd24fd1a2368b4.png",
     "static/media/fibre.png": "/landing-page-react/static/media/fibre.aaa15050c170e6d01563.png",
@@ -15,9 +15,9 @@
     "static/media/pen.png": "/landing-page-react/static/media/pen.c68638afa1d56d15807c.png",
     "static/media/Macbook.png": "/landing-page-react/static/media/Macbook.55ee1af9aa89e298ead7.png",
     "index.html": "/landing-page-react/index.html",
-    "main.925d5461.js.map": "/landing-page-react/static/js/main.925d5461.js.map"
+    "main.7973eeb2.js.map": "/landing-page-react/static/js/main.7973eeb2.js.map"
   },
   "entrypoints": [
-    "static/js/main.925d5461.js"
+    "static/js/main.7973eeb2.js"
   ]
 }
