@@ -30,6 +30,10 @@ export const WrapperContact = styled.div`
     height: 3.5rem;
     display: flex;
     align-items: center;
+
+    @media (max-width: 480px) {
+        justify-content: left;
+    }
 `;
 
 export const ContactText = styled.p`
@@ -94,6 +98,8 @@ export const Feature = styled.div`
     background-position: right bottom;
 
     @media (max-width: 480px) {
+        margin-top: 1rem;
+
         border-radius: 2rem;
         flex-direction: column;
         width: 25rem;
@@ -146,7 +152,10 @@ export const Footer = styled.footer`
     justify-content: center;
     align-items: center;
 
-    opacity: 0;
+    @media (max-width: 480px) {
+        bottom: -350px;
+        flex-direction: column;
+    }
 `;
 
 export const WrapperFooter = styled.div`
@@ -156,6 +165,13 @@ export const WrapperFooter = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+
+    @media (max-width: 480px) {
+        width: 100vw;
+        /* background-color: #202020; */
+        flex-direction: column;
+        gap: 1rem;
+    }
 `;
 
 export const WrapperLinks = styled.div`
@@ -163,6 +179,12 @@ export const WrapperLinks = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 480px) {
+        width: 15rem;
+        align-items: center;
+        justify-content: left;
+    }
 `;
 
 export const FooterUl = styled.ul`
