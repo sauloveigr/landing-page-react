@@ -11,7 +11,7 @@ export const HomeSection = styled(motion.section)`
     height: 89vh;
 
     @media (max-width: 480px) {
-        height: 120vh;
+        height: 89vh;
         width: 100vw;
         overflow: hidden;
     }

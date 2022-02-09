@@ -14,6 +14,7 @@ export const ProductSection = styled(motion.section)`
 
     @media (max-width: 480px) {
         width: 34.313rem;
+        overflow-x: hidden;
     }
 `;
 
@@ -26,7 +27,6 @@ export const WrapperImage = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* background-color: #202020; */
         height: 25.375rem;
         width: 23.5rem;
         margin-bottom: 7rem;

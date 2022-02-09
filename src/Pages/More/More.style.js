@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Colors from "../../Colors";
 import { motion } from "framer-motion";
 import FeatureBg from "../../assets/FeatureBg.png";
+import FeatureBg2 from "../../assets/FeatureBg2.png";
 
 export const WrapperSocial = styled.div`
     display: flex;
@@ -47,6 +48,10 @@ export const MoreArticle = styled(motion.article)`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 480px) {
+        height: 120vh;
+    }
 `;
 
 export const PartnerSection = styled.section``;
@@ -60,13 +65,16 @@ export const PartnerDiv = styled.div`
     margin-bottom: 2.5rem;
 
     @media (max-width: 480px) {
-        /* background-color: grey; */
         width: 25rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3.125rem;
         justify-content: center;
         align-content: center;
+
+        img:nth-child(6) {
+            width: 5.188rem;
+        }
     }
 `;
 
@@ -84,6 +92,19 @@ export const Feature = styled.div`
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: right bottom;
+
+    @media (max-width: 480px) {
+        border-radius: 2rem;
+        flex-direction: column;
+        width: 25rem;
+        height: 31.25rem;
+        align-items: center;
+        padding-left: 0rem;
+        background-image: url(${FeatureBg2});
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: bottom center;
+    }
 `;
 
 export const FeatureTitle = styled.h1`
@@ -94,6 +115,12 @@ export const FeatureTitle = styled.h1`
     justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
+
+    @media (max-width: 480px) {
+        width: 25rem;
+        font-size: 2rem;
+        text-align: center;
+    }
 `;
 
 export const WrapperFeatureTitle = styled.div`
@@ -103,6 +130,11 @@ export const WrapperFeatureTitle = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+
+    @media (max-width: 480px) {
+        width: 20rem;
+        align-items: center;
+    }
 `;
 
 export const Footer = styled.footer`
@@ -113,6 +145,8 @@ export const Footer = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    opacity: 0;
 `;
 
 export const WrapperFooter = styled.div`

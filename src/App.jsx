@@ -10,7 +10,7 @@ import Product from "./Pages/Product/Product";
 import Contents from "./Pages/Content/Contents";
 import Gallery from "./Pages/Gallery/Gallery";
 import More from "./Pages/More/More";
-// import { MenuLogo } from "./Components/MenuLogo";
+import { MenuLogo } from "./Components/MenuLogo";
 
 function App() {
     return (
@@ -37,7 +37,7 @@ function App() {
                         </NavLink>
                     </NavBar>
                     <LoginButton>Login</LoginButton>
-                    {/* <MenuLogo/> */}
+                    <MenuLogo/>
                 </Header>
                 <Routes>
                     <Route path="/landing-page-react" element={<Home />} />

@@ -10,9 +10,11 @@ const Header = styled.header`
     padding: 0 2.5rem;
 
     @media (max-width: 480px) {
+        display: flex;
+        justify-content: normal;
         width: 100vw;
         height: 6.688rem;
-        padding: 0;
+        padding: 0 0rem;
         margin: 0;
         overflow: hidden;
 `;

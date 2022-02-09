@@ -16,6 +16,10 @@ const BlackButton = styled.button`
         border: 1px solid ${Colors.first};
     }
 
+    @media (max-width: 480px) {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
 `;
 
 export default BlackButton;
