@@ -10,4 +10,4 @@ Packages:
 -   styled-components
 -   react-router-dom
 -   framer-motion
-
+- gh-pages
